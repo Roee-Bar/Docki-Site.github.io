@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head dir="rtl" lang="he">
+        <meta charset="utf8">
+        <title>Doci register page</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/scripts.js"></script>
+    </head>
+    <body dir="rtl">
+        <h1>Register Page</h1>
+        <form>
+            <table >
+                <tr>
+                    <th>סוג מידע</th>   <th>קלט</th>
+                </tr>
+                <tr>
+                    <td>שם:</td>    <td><input type="text" id="nameForm" name="nameForm"></td>
+                </tr>
+                <tr>
+                    <td>תעודת זהות:</td>    <td><input type="text" id="idForm" name="idForm"></td>
+                </tr>
+                <tr>
+                    <td>גיל:</td>    <td><input type="text" id="ageForm" name="ageForm"></td>
+                </tr>
+                <tr>
+                    <td>מגדר:</td>    <td><select id="genderForm" name="genderForm">
+                                            <option value="זכר">זכר</option>
+                                            <option value="נקבה">נקבה</option>
+                                        </select></td>
+                </tr>
+                <tr>
+                    <td>מחלות רקע ורגישויות:</td>    <td><textarea id="diseasesSensitivities" name="diseasesSensitivities" rows="5" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick = "submitForm()">שליחה</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="changePage('index.html')">חזרה לדף ראשי</button></td>
+                </tr>
+                
+            </table>
+        </form>
+    </body>
+</html>
