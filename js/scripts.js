@@ -22,7 +22,7 @@ function submitForm()
         messegeToUser += "נא הכנס ת.ז. תקין\n";
         inputIsValid = false;
     }
-    if (typeof age != "number" || age < 0 || age > 120)
+    if (isNaN(age) || age < 0 || age > 120)
     {
         messegeToUser += "נא הכנס גיל תקין\n";
         inputIsValid = false;
