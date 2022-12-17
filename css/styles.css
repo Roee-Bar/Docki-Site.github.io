@@ -1,15 +1,58 @@
-body{
-    background-color: green;
-}
 
+/*
+NOTE: The biggest takeaway from the studio lesson was improving our design using CSS code.
+*/
+
+/* Set the title of the website in the head element */
+title {
+	color: #4caf50;
+	font-size: 24px;
+  }
+
+/* Set the background color of the head element to a light gray color */
+head {
+	background-color: #f2f2f2;
+  }
+
+/* Set the default font family and size for the entire website */
+body {
+	font-family: Arial, sans-serif;
+  	font-size: 16px;
+	background-color: lightblue;
+  }
+
+/* Set the font color for the h1 heading */
 h1 {
 	text-align: right;
-}
+	color: #4caf50;
+  }
 
-th {
-	text-align: right;
-}
+table {
+	border-collapse: collapse; /* Combine adjacent border cells */
+	width: 100%; /* Set table to take up full width of container */
+  }
+  
+  th, td {
+	text-align: center; /* Align cell contents to the right */
+	padding: 8px; /* Add some padding to cells */
+	border: 1px solid #ddd; /* Add a border to cells */
+  }
+  
+  tr:nth-child(even) {
+	background-color: #f2f2f2; /* Add a background color to even rows */
+  }
+  
+  th {
+	background-color: #4caf50; /* Add a background color to the header row */
+	color: white; /* Make text in the header row white */
+  }
 
-td {
-	text-align: right;
-}
+  /* Style the button with a green background and white text */
+  button {
+	background-color: #4caf50;
+	color: white;
+	padding: 8px 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+  }
